@@ -1,4 +1,4 @@
-package lab7_201620932;
+package lab7;
 
 public interface DataStorage {
 	public double getFreeCapacity();
