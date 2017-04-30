@@ -6,6 +6,27 @@ public class ProductTest {
 	
 	
 	public static void main(String[] args) {
+		Product L = new Laptop();
+		Product S = new SmartTV();
+		Product T = new Toaster();
+		ProductTest PT = new ProductTest();
+		DataStorage DL = new Laptop();
+		Networked NL = new Laptop();
+		Networked NT = new SmartTV();
+		Cooker CT = new Toaster();
+		
+		System.out.println(L.getName());
+		System.out.println();
+		PT.testDataStorage(DL);
+		PT.testNetworked(NL);
+		
+		System.out.println(S.getName());
+		System.out.println();
+		PT.testNetworked(NT);
+		
+		System.out.println(T.getName());
+		System.out.println();
+		PT.testCooker(CT);
 	}
 	
 	public void testProduct(Product P) {
